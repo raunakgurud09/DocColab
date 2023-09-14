@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { UserAvatar } from "@/components/user-avatar"
+import { ModeToggle } from "./mode-toggle"
 
 interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<User, "name" | "image" | "email">
@@ -46,6 +47,9 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
           <Link href="/dashboard/settings">Settings</Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <ModeToggle />
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem

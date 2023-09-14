@@ -1,5 +1,5 @@
-import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
-import DashboardNavbar from "@/components/Navbar";
+import DashboardNavbar from "@/components/Dashboard/NavBar";
+import DashbaordSidebar from "@/components/Dashboard/SideBar";
 import { ReactNode } from "react"
 
 export default function page({ children }: {
@@ -7,9 +7,12 @@ export default function page({ children }: {
 }) {
   return (
 
-    <div className="">
-      <DashboardNavbar />
-      {children}
+    <div className="flex flex-row h-screen">
+      <DashbaordSidebar />
+      <div className="flex flex-col w-full">
+        <DashboardNavbar />
+        {children}
+      </div>
     </div>
   )
 }
