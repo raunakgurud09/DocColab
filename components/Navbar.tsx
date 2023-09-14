@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Hexagon } from "lucide-react";
 import { getCurrentUser } from "@/lib/session";
 import { buttonVariants } from "./ui/button";
+import { UserAccountNav } from "./UserAccountNav";
 
 
 const Navbar = async () => {
@@ -13,10 +14,18 @@ const Navbar = async () => {
           <Hexagon />
         </Link>
       </div>
-      <div>{
-        user ? <div>logged in</div> :
-          <Link href={'/sign-in'} className={buttonVariants()}>Sign In</Link>
-      }
+      <div>
+        {
+          user
+            ? <UserAccountNav
+              user={{
+                name: user.name,
+                email: user.email,
+                image: user.image
+              }}
+            />
+            : <Link href={'/sign-in'} className={buttonVariants()}>Sign In</Link>
+        }
       </div>
     </nav>
   )
