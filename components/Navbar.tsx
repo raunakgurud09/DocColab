@@ -24,7 +24,7 @@ const Navbar = async () => {
                 image: user.image
               }}
             />
-            : <Link href={'/sign-in'} className={buttonVariants()}>Sign In</Link>
+            : <Link href={'/sign-in'} className={buttonVariants({ variant: "outline", size: "sm" })}>Sign In</Link>
         }
       </div>
     </nav>
