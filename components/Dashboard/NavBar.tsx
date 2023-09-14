@@ -21,11 +21,11 @@ const DashboardNavbar = async () => {
               </nav>
               <div className="flex space-x-4">
                 <div className="flex items-center justify-center space-x-2">
-                  <div className="flex items-center justify-center bg-foreground/10 border-foreground/10 text-primary border-[1px] px-2 py-1 rounded-md">
+                  <div className="flex items-center justify-center bg-foreground/10 border-foreground/10 text-primary border-[1px] px-3 py-1 rounded-md">
                     <HelpCircle size={16} />
-                    <span className="text-xs ml-2">Help</span>
+                    <span className="text-xs ml-1">Help</span>
                   </div>
-                  <div className="flex items-center justify-center bg-foreground/10 border-foreground/10 text-primary border-[1px] px-2 py-1 rounded-md">
+                  <div className="flex items-center justify-center bg-foreground/10 border-foreground/10 text-primary border-[1px] px-3 py-1 rounded-md">
                     <Bell size={16} />
                   </div>
                 </div>
