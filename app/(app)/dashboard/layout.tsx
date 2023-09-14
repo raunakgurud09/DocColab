@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
+import DashboardNavbar from "@/components/Navbar";
 import { ReactNode } from "react"
 
 export default function page({ children }: {
@@ -6,8 +7,8 @@ export default function page({ children }: {
 }) {
   return (
 
-    <div className="p-4 ">
-      <Breadcrumb />
+    <div className="">
+      <DashboardNavbar />
       {children}
     </div>
   )
