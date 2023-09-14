@@ -8,7 +8,7 @@ import { UserAccountNav } from "./UserAccountNav";
 const Navbar = async () => {
   const user = await getCurrentUser()
   return (
-    <nav className='flex w-full items-center justify-between px-4 py-2 border-b border-white/[0.1] '>
+    <nav className='flex w-full items-center justify-between px-4 py-2 border-b'>
       <div className='text-lg font-bold'>
         <Link href={'/'}>
           <Hexagon />
