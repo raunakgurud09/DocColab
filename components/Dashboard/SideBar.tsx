@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../Logo'
+import Link from 'next/link'
 
 export default function DashbaordSidebar() {
   return (
@@ -13,7 +14,7 @@ export default function DashbaordSidebar() {
           <div className='flex flex-col'>
             {
               [...Array(3)].map((_, i) => (
-                <p key={i} className='text-xs'>Project names{i}</p>
+                <Link href={`/dashboard/projects/${i}`} key={i} className='text-xs'>Project names{i}</Link>
               ))
             }
           </div>
