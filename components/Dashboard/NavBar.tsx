@@ -5,6 +5,7 @@ import { buttonVariants } from "../ui/button";
 import { UserAccountNav } from "../UserAccountNav";
 import Logo from "../Logo";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import { Icons } from "../icons";
 
 
 const DashboardNavbar = async () => {
@@ -16,9 +17,15 @@ const DashboardNavbar = async () => {
           user
             ?
             <div className="flex w-full items-center justify-between">
-              <nav>
-                {/* <Breadcrumb /> */}
-              </nav>
+              <div className="flex flex-row items-center space-x-1">
+                <div className="md:hidden flex items-center p-1 rounded-md bg-muted/50" >
+                  <Icons.menu size={16} />
+                </div>
+                <nav>
+                  {/* <Breadcrumb /> */}
+                  Breadcrumb
+                </nav>
+              </div>
               <div className="flex space-x-4">
                 <div className="flex items-center justify-center space-x-2">
                   <div className="flex items-center justify-center bg-foreground/10 border-foreground/10 text-primary border-[1px] px-3 py-1 rounded-md">
