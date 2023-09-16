@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href={'/'} className='relative text-lg font-bold opacity-80 hover:cursor-pointer hover:opacity-100 flex flex-row item-center justify-center'>
+    <Link href={'/'} className='relative h-6 text-lg font-bold opacity-80 hover:cursor-pointer hover:opacity-100 flex flex-row item-center justify-center'>
       <div  className="flex items-center">
         <Hexagon size={16} />
       </div>
