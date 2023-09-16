@@ -18,7 +18,7 @@ export default function DashbaordSidebar() {
           heading="Projects"
         />
         <SubSideBar 
-          heading="Organization"
+          heading="Organizations"
         />
         <AccountSubSideBar />
         <Documentation />

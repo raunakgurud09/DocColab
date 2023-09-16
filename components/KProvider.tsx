@@ -85,7 +85,7 @@ const Kbd = ({ children, className }: KbdProps): JSX.Element => {
     <>
       <kbd
         className={cx(
-          "rounded-md border-[1px] border-b-2 border-[#4a4a4a] bg-background/5 px-2 py-0.5 text-sm",
+          "rounded-md border-[1px] border-[#4a4a4a] bg-background/5 px-2 py-0.5 text-sm",
           className
         )}
       >
@@ -109,10 +109,19 @@ const KProvider = ({ children }: KProviderProps): JSX.Element => {
       icon: <Home />,
     },
     {
+      id: "Project",
+      name: "Project",
+      keywords: "Project",
+      shortcut: ["p"],
+      perform: () => window.location.href = "/dashboard/projects",
+      section: "Pages",
+      icon: <LayoutPanelTop />,
+    },
+    {
       id: "Blog",
       name: "Blog",
       keywords: "Blog",
-      shortcut: ["g"],
+      shortcut: ["b"],
       perform: () => window.location.href = "/blog",
       section: "Pages",
       icon: <LayoutPanelTop />,
