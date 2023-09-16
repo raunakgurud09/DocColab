@@ -12,11 +12,11 @@ const AccountInformation = async () => {
       <div className="grid gap-4">
         <div className="flex flex-row w-full items-center justify-between">
           <p className="text-muted-foreground text-sm">Username</p>
-          <input type="text" className="border px-4 py-1.5 placeholder:text-sm text-sm placeholder:text-muted-foreground w-[60%] rounded-md" placeholder={user?.name || "raunakgurud09"} disabled />
+          <input type="text" className="border px-4 py-1.5 placeholder:text-sm text-sm bg-muted/50 placeholder:text-muted-foreground w-[60%] rounded-md" placeholder={user?.name || "raunakgurud09"} disabled />
         </div>
         <div className="flex flex-row w-full items-center justify-between">
           <p className="text-muted-foreground text-sm">Email</p>
-          <input type="text" className="border px-4 py-1.5 placeholder:text-sm text-sm placeholder:text-muted-foreground w-[60%] rounded-md" placeholder={user?.email || "raunakgurud@gmail.com"} disabled />
+          <input type="text" className="border px-4 py-1.5 placeholder:text-sm text-sm bg-muted/50 placeholder:text-muted-foreground w-[60%] rounded-md" placeholder={user?.email || "raunakgurud@gmail.com"} disabled />
         </div>
       </div>
     </OptionCard>
