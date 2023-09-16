@@ -9,8 +9,8 @@ import Documentation from './SubSideBar/Documentation'
 export default function DashbaordSidebar() {
   
   return (
-    <div className="w-60  border-r flex flex-col items-center justify-start h-full">
-      <div className="w-60 border-r flex items-center justify-start px-4 h-12 border-b">
+    <div className="w-64  border-r flex flex-col items-center justify-start h-full ">
+      <div className="w-64 border-r flex items-center justify-start px-6 h-12 border-b">
         <Logo />
       </div>
       <div className='w-full'>
