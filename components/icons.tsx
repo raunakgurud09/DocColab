@@ -1,6 +1,7 @@
 import {
   AlertTriangle,
   ArrowRight,
+  ArrowUpRight,
   Check,
   ChevronLeft,
   ChevronRight,
@@ -31,6 +32,7 @@ import {
 export const Icons = {
   logo: Command,
   close: X,
+  arrowUpRight: ArrowUpRight,
   spinner: Loader2,
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
@@ -50,7 +52,7 @@ export const Icons = {
   pizza: Pizza,
   sun: SunMedium,
   moon: Moon,
-  upDown:ChevronsUpDown,
+  upDown: ChevronsUpDown,
   laptop: Laptop,
   gitHub: ({ ...props }: LucideProps) => (
     <svg

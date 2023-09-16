@@ -22,7 +22,7 @@ export default function UserAuthForm() {
 
   return (
     <div className={cn('flex justify-center')}>
-      <Button onClick={loginWithGoogle}>Google</Button>
+      <Button onClick={loginWithGoogle} variant={"secondary"} className='w-full' size={'icon'}>Google</Button>
     </div>
   )
 }

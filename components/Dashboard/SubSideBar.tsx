@@ -11,7 +11,7 @@ export default function SubSideBar({ heading }: any) {
       <div className={cx('flex flex-col space-y-1 overflow-y-hidden px-6 ', show ? 'h-fit' : 'h-16')}>
         {
           [...Array(1)].map((_, i) => (
-            <Link href={`/dashboard/projects/${i}`} key={i} className='text-sm opacity-90 hover:opacity-100'>Project name {i}</Link>
+            <Link href={`/project/${i}`} key={i} className='text-sm opacity-90 hover:opacity-100'>Project name {i}</Link>
           ))
         }
       </div>

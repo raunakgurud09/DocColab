@@ -1,6 +1,6 @@
 
 export default function page() {
   return (
-    <div>project slug</div>
+    <div>page</div>
   )
 }
