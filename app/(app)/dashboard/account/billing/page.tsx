@@ -16,6 +16,9 @@ export default function page() {
           Docolab app is a demo app using a Stripe test environment. You can find a list of test card numbers on the Stripe docs.
           </AlertDescription>
         </Alert>
+        <div>
+          
+        </div>
       </div>
     </AccountHeader>
   )

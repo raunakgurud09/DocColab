@@ -2,7 +2,7 @@ import DashboardNavbar from "@/components/Dashboard/NavBar";
 import DashbaordSidebar from "@/components/Dashboard/SideBar";
 import { ReactNode } from "react"
 
-export default function page({ children }: {
+export default function dashboardLayout({ children }: {
   children: ReactNode
 }) {
   return (

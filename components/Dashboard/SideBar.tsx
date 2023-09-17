@@ -15,9 +15,11 @@ export default function DashbaordSidebar() {
       <div className='w-full'>
         <SubSideBar 
           heading="Projects"
-        />
+          link={'/dashboard/projects'}
+          />
         <SubSideBar 
           heading="Organizations"
+          link={'/dashboard/orgs'}
         />
         <AccountSubSideBar />
         <Documentation />
