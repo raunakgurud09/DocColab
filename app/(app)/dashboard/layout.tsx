@@ -7,9 +7,9 @@ export default function page({ children }: {
 }) {
   return (
 
-    <div className="flex flex-row h-screen">
+    <div className="flex flex-row">
       <DashbaordSidebar />
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full h-fit">
         <DashboardNavbar />
         {children}
       </div>

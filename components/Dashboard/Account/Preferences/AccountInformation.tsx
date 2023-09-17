@@ -1,3 +1,4 @@
+import AccountInput from "@/components/Common/AccountInput";
 import OptionCard from "@/components/optionCard";
 import { getCurrentUser } from "@/lib/session";
 
@@ -10,14 +11,16 @@ const AccountInformation = async () => {
       heading="Account Information"
     >
       <div className="grid gap-4">
-        <div className="flex flex-row w-full items-center justify-between">
-          <p className="text-muted-foreground text-sm">Username</p>
-          <input type="text" className="border px-4 py-1.5 placeholder:text-sm text-sm bg-muted/50 placeholder:text-muted-foreground w-[60%] rounded-md" placeholder={user?.name || "raunakgurud09"} disabled />
-        </div>
-        <div className="flex flex-row w-full items-center justify-between">
-          <p className="text-muted-foreground text-sm">Email</p>
-          <input type="text" className="border px-4 py-1.5 placeholder:text-sm text-sm bg-muted/50 placeholder:text-muted-foreground w-[60%] rounded-md" placeholder={user?.email || "raunakgurud@gmail.com"} disabled />
-        </div>
+        <AccountInput
+          name="Username"
+          placeholder={user?.name || "username"}
+          disabled={true}
+        />
+        <AccountInput
+          name="Email"
+          placeholder={user?.email || "user@example.com"}
+          disabled={true}
+        />
       </div>
     </OptionCard>
   )

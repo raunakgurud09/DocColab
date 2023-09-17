@@ -1,6 +1,12 @@
+import AccountHeader from "@/components/Common/AccountHeader";
 
 export default function page() {
   return (
-    <div>page</div>
+    <AccountHeader
+      heading="Billing"
+      text="Manage billing and your subscription plan."
+    >
+      billing
+    </AccountHeader>
   )
 }
