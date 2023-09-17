@@ -7,11 +7,11 @@ export default function SubSideBar({ heading, link }: any) {
 
   return (
     <div className='border-b py-3 flex flex-col w-full space-y-2'>
-      <Link href={link} className='text-primary text-sm opacity-60 px-6' >{heading}</Link>
+      <Link href={link} className='text-muted-foreground/50 text-sm  px-6' >{heading}</Link>
       <div className={cx('flex flex-col space-y-1 overflow-y-hidden px-6 ', show ? 'h-fit' : 'h-16')}>
         {
           [...Array(1)].map((_, i) => (
-            <Link href={`/project/${i}`} key={i} className='text-sm opacity-90 hover:opacity-100'>Project name {i}</Link>
+            <Link href={`/project/${i}`} key={i} className='text-sm text-muted-foreground hover:text-foreground'>Project name {i}</Link>
           ))
         }
       </div>

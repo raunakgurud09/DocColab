@@ -24,6 +24,7 @@ interface KbdProps {
 }
 import { KBarResults, useMatches } from "kbar";
 import { ReactElement, cloneElement } from "react";
+import { useTheme } from "next-themes";
 
 
 const KResults = () => {
@@ -39,7 +40,7 @@ const KResults = () => {
           <div
             className={cx(
               "flex cursor-pointer items-center justify-between rounded-lg px-3 py-3 transition-colors",
-              active ? "bg-primary/10" : "bg-transparent"
+              active ? "bg-muted/80" : "bg-transparent"
             )}
           >
             <div className="flex items-center">
@@ -97,6 +98,7 @@ const Kbd = ({ children, className }: KbdProps): JSX.Element => {
 
 const KProvider = ({ children }: KProviderProps): JSX.Element => {
   // const { push } = useRouter();
+  const { setTheme, theme } = useTheme()
 
   const actions: Action[] = [
     {
@@ -118,30 +120,48 @@ const KProvider = ({ children }: KProviderProps): JSX.Element => {
       icon: <LayoutPanelTop />,
     },
     {
-      id: "Blog",
-      name: "Blog",
-      keywords: "Blog",
-      shortcut: ["b"],
-      perform: () => window.location.href = "/blog",
+      id: "Organizations",
+      name: "Organization",
+      keywords: "Organization",
+      shortcut: ["o"],
+      perform: () => window.location.href = "/dashboard/orgs/ndsfink/general",
       section: "Pages",
       icon: <LayoutPanelTop />,
     },
     {
-      id: "Doc",
-      name: "Doc",
-      keywords: "Doc",
-      shortcut: ["a"],
-      perform: () => window.location.href = "/",
+      id: "Theme",
+      name: "Theme",
+      keywords: "Theme",
+      shortcut: ["t"],
+      perform: () => { },
       section: "Pages",
-      icon: <BookOpen />,
+      icon: <LayoutPanelTop />,
     },
-    {
-      id: "Help",
-      name: "Help",
-      keywords: "Help",
-      section: "Pages",
-      icon: <HeartHandshake />,
-    },
+    // {
+    //   id: "Blog",
+    //   name: "Blog",
+    //   keywords: "Blog",
+    //   shortcut: ["b"],
+    //   perform: () => window.location.href = "/blog",
+    //   section: "Pages",
+    //   icon: <LayoutPanelTop />,
+    // },
+    // {
+    //   id: "Doc",
+    //   name: "Doc",
+    //   keywords: "Doc",
+    //   shortcut: ["a"],
+    //   perform: () => window.location.href = "/",
+    //   section: "Pages",
+    //   icon: <BookOpen />,
+    // },
+    // {
+    //   id: "Help",
+    //   name: "Help",
+    //   keywords: "Help",
+    //   section: "Pages",
+    //   icon: <HeartHandshake />,
+    // },
     // {
     //   id: "projects-page",
     //   name: "All Projects",
@@ -210,11 +230,11 @@ const KProvider = ({ children }: KProviderProps): JSX.Element => {
     <>
       <KBarProvider actions={actions}>
         <KBarPortal>
-          <KBarPositioner className="z-30 bg-background/10 backdrop-blur-sm">
+          <KBarPositioner className="z-70 bg-background/10 backdrop-blur-md ">
             <KBarAnimator className="mx-auto w-[32rem] overflow-hidden rounded-xl border-[1px] border-tertiary bg-background/60 px-4 drop-shadow-2xl ">
               <div className="mx-2 flex items-end justify-between py-4">
                 <span>
-                  <Search className="mr-2 mb-0.5 h-5 w-5 text-gray-100" />
+                  <Search className="mr-2 mb-0.5 h-5 w-5 text-primary" />
                 </span>
                 <KBarSearch className="w-full rounded-md border-b border-none border-gray-300 bg-transparent pt-2 text-gray-100 outline-none" />
                 <Kbd>esc</Kbd>

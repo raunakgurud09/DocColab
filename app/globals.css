@@ -19,7 +19,7 @@
     --secondary: 60 4.8% 95.9%;
     --secondary-foreground: 24 9.8% 10%;
 
-    --muted: 60 4.8% 95.9%;
+    --muted: 60 4.8% 40.9%;
     --muted-foreground: 25 5.3% 44.7%;
 
     --accent: 60 4.8% 95.9%;
@@ -37,6 +37,7 @@
 
   .dark {
     --background: 20 14.3% 4.1%;
+    --background-muted: 12 6.5% 7.1%;
     --foreground: 60 9.1% 80.8%;
 
     --card: 20 14.3% 4.1%;
@@ -45,13 +46,15 @@
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
 
-    --primary: 60 9.1% 97.8%;
+    --try-primary: 273, 88%, 44%;
+
+    --primary: 271, 81%, 56%;
     --primary-foreground: 24 9.8% 10%;
 
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
 
-    --muted: 12 6.5% 15.1%;
+    --muted: 12 6.5% 14.1%;
     --muted-foreground: 24 5.4% 63.9%;
 
     --accent: 12 6.5% 15.1%;
@@ -73,6 +76,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .fcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.v {
+  color: hsl(271, 81%, 56%);
 }
 
 /* Custom Scrollbar */

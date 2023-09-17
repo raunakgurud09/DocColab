@@ -44,14 +44,16 @@ export default function orgsSlugLayout({ children }: {
 
   return (
     <div className="w-full">
-      <div className="w-full ">
-        <h1 className="text-2xl px-16 py-7">Organization name settings</h1>
-        <p className=""></p>
+      <div className="w-full">
+        <div className=" px-16 py-7">
+          <h1 className="text-2xl">Organization&apos;s name settings</h1>
+          <p className="text-sm text-muted-foreground">Organizations settings and projects</p>
+        </div>
         <nav className="border-b px-14">
           <ul className="flex flex-row space-x-4">
             {
               orgsSlugPages.map((page) => (
-                <li key={page._id} className={cx("text-xs px-2 py-1", page.active ? " border-b-2 border-white " : "opacity-70")}>
+                <li key={page._id} className={cx("text-xs px-2 py-1 hover:opacity-100", page.active ? " border-b-2 border-white font-medium" : "opacity-70  ")}>
                   <Link href={`/dashboard/orgs/fsnoinskl/${page.link}`}>
                     {page.name}
                   </Link>
