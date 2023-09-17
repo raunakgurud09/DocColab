@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function orgsGeneral() {
   return (
-    <div className=''>general</div>
+    <div className='h-screen'>general</div>
   )
 }

@@ -11,7 +11,7 @@ import { Icons } from "../icons";
 const DashboardNavbar = async () => {
   const user = await getCurrentUser()
   return (
-    <header className='flex w-full items-center h-12 border-b'>
+    <header className='flex sticky z-50 top-0 w-full items-center h-12 border-b bg-background'>
       <div className="px-4 py-2 w-full">
         {
           user
