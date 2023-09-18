@@ -33,8 +33,10 @@ const page = async () => {
                   </div>
                   <p className="text-xs"><span>Edited - </span> 19 sept 24 </p>
                 </div>
-                <div className="flex items-center justify-center w-16 h-10">
-                  <Icons.moreV size={18}/>
+                <div className="flex items-center justify-center w-16 h-10 ">
+                  <div className="hover:bg-foreground/20 rounded-full p-2">
+                    <Icons.moreV size={18} className="" />
+                  </div>
                 </div>
               </div>
             </Link>
