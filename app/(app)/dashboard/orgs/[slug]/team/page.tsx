@@ -1,7 +1,18 @@
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import { UserAvatar } from "@/components/user-avatar";
+import { authOptions } from "@/lib/auth";
+import { getCurrentUser } from "@/lib/session";
+import { redirect } from "next/navigation";
 
-export default function orgsTeam() {
+export default async function orgsTeam() {
+
+  const user = await getCurrentUser()
+
+  if (!user) {
+    redirect(authOptions?.pages?.signIn || "/login")
+  }
+
 
   return (
     <div>
@@ -29,7 +40,12 @@ export default function orgsTeam() {
                 [...Array(2)].map((_, i) => (
                   <div key={i} className="w-full flex flex-row items-center px-6 py-2  ">
                     <div className="w-6/12 text-sm text-foreground/50 flex flex-row items-center">
-                      <div className="w-8 h-8 rounded-full bg-foreground/40 mr-2"></div>
+                      {/* <div className="w-8 h-8 rounded-full bg-foreground/40 mr-2"> */}
+                      <UserAvatar
+                        user={{ name: user.name || null, image: user.image || null }}
+                        className="h-8 w-8"
+                      />
+                      {/* </div> */}
                       <p className="w-[90%] truncate">Raunak Gurud</p>
                     </div>
                     <div className="w-3/12 text-sm text-foreground/50">

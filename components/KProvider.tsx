@@ -133,7 +133,10 @@ const KProvider = ({ children }: KProviderProps): JSX.Element => {
       name: "Theme",
       keywords: "Theme",
       shortcut: ["t"],
-      perform: () => { },
+      perform: () => {
+        console.log(theme);
+        theme === "light" ? setTheme('dark') : setTheme('light')
+      },
       section: "Pages",
       icon: <LayoutPanelTop />,
     },

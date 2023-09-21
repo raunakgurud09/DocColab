@@ -5,9 +5,9 @@ export default function SettingsCard({ children }: {
   children: ReactNode
 }) {
   return (
-    <div className="bg-muted/10 p-4 rounded-md border-[1px]">
+    <div className="bg-muted p-4 rounded-md border-[1px]">
       <div className="4/12">
-        <button className="flex flex-row jus items-center px-2 py-1 rounded-md border bg-purple-600/50 border-purple-600 hover:bg-purple-600 text-white  text-xs font-medium">
+        <button className="flex flex-row jus items-center px-2 py-1 rounded-md border bg-accent/90 hover:bg-accent text-accent-foreground text-xs font-medium">
           <Icons.add size={12} className="mr-1 text-semibold"/>
           Create
         </button>
@@ -26,6 +26,8 @@ export default function SettingsCard({ children }: {
         <div className="fcc w-full h-20 rounded-md bg-muted-foreground text-muted">muted-foreground</div>
         <div className="fcc w-full h-20 rounded-md bg-destructive text-destructive-foreground ">destructive</div>
         <div className="fcc w-full h-20 rounded-md bg-destructive-foreground text-destructive ">destructive</div>
+        <div className="fcc w-full h-20 rounded-md bg-accent text-accent-foreground ">accent</div>
+        <div className="fcc w-full h-20 rounded-md bg-accent-foreground text-accent ">accent-foreground</div>
       </div>
 
 
