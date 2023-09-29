@@ -45,7 +45,9 @@ const DashboardNavbar = async () => {
                 />
               </div>
             </div>
-            : <Link href={'/sign-in'} className={buttonVariants({ variant: "outline", size: "sm" })}>Sign In</Link>
+            : <div className="w-full flex justify-end items-center ">
+              <Link href={'/sign-in'} className={buttonVariants({ variant: "outline", size: "sm" })}>Sign In</Link>
+            </div>
         }
       </div>
     </header>

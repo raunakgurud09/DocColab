@@ -7,12 +7,11 @@ import { redirect } from "next/navigation";
 
 export default async function orgsTeam() {
 
-  const user = await getCurrentUser()
+  // const user = await getCurrentUser()
 
-  if (!user) {
-    redirect(authOptions?.pages?.signIn || "/login")
-  }
-
+  // if (!user) {
+  //   redirect(authOptions?.pages?.signIn || "/login")
+  // }
 
   return (
     <div>
@@ -22,8 +21,8 @@ export default async function orgsTeam() {
           <input type="text" className="pl-8 px-4 py-2 text-xs rounded-md placeholder:text-foreground/50 bg-muted/50 border " placeholder="Filter members" />
         </div>
         <div className="space-x-2">
-          <Button size={"xs"} className="text-white">Invite</Button>
-          <Button size={"xs"} variant={"secondary"} className="text-white">Leave team</Button>
+          <Button size={"xs"} className="bg-accent">Invite</Button>
+          <Button size={"xs"} variant={"secondary"} className="bg-">Leave team</Button>
         </div>
       </div>
       <div className="w-full mt-4">
@@ -42,7 +41,7 @@ export default async function orgsTeam() {
                     <div className="w-6/12 text-sm text-foreground/50 flex flex-row items-center">
                       {/* <div className="w-8 h-8 rounded-full bg-foreground/40 mr-2"> */}
                       <UserAvatar
-                        user={{ name: user.name || null, image: user.image || null }}
+                        user={{ name: null || null, image: null || null }}
                         className="h-8 w-8"
                       />
                       {/* </div> */}

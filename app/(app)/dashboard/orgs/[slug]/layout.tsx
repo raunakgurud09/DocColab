@@ -53,7 +53,7 @@ export default function orgsSlugLayout({ children }: {
           <ul className="flex flex-row space-x-4">
             {
               orgsSlugPages.map((page) => (
-                <li key={page._id} className={cx("text-xs px-2 py-1 hover:opacity-100", page.active ? " border-b-2 border-white font-medium" : "opacity-70  ")}>
+                <li key={page._id} className={cx("text-xs px-2 py-1 hover:opacity-100", page.active ? " border-b-2 border-foreground font-medium" : "opacity-70  ")}>
                   <Link href={`/dashboard/orgs/fsnoinskl/${page.link}`}>
                     {page.name}
                   </Link>
