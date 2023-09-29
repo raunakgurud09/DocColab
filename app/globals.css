@@ -108,3 +108,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #5c636e;
 }
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -19,8 +19,11 @@ export default function HeroBackground() {
           [...Array(20)].map((_, i) => (
             <div key={i} style={{
               left: getRandomInt(0, 1200),
-              top: getRandomInt(0, 650)
-            }} className={`absolute w-fit h-fit animate-pulse`}>
+              top: getRandomInt(0, 650),
+              animation: "ease-in-out infinite sparkle",
+              animationDuration: `${getRandomInt(5000, 10000)}ms`
+              // animationDuration: `${getRandomInt(200, 800)}s`
+            }} className={`absolute w-fit h-fit`}>
               <Sparkle size={getRandomInt(1, 10)} />
             </div>
           ))
