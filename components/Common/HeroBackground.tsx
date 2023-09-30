@@ -1,11 +1,6 @@
+import { getRandomInt, playPause } from "@/lib/helper";
 import { Sparkle } from "lucide-react";
 
-function getRandomInt(min: number, max: number) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-// left-[${getRandomInt(0, 800)}px] top-[${getRandomInt(0, 800)}px]`
 export default function HeroBackground() {
   return (
     <div className="relative">
@@ -21,14 +16,16 @@ export default function HeroBackground() {
               left: getRandomInt(0, 1200),
               top: getRandomInt(0, 650),
               animation: "ease-in-out infinite sparkle",
-              animationDuration: `${getRandomInt(5000, 10000)}ms`
-              // animationDuration: `${getRandomInt(200, 800)}s`
+              // animationDuration: `${getRandomInt(5000, 10000)}ms`,
+              animationDuration: `1000ms`,
+              animationPlayState: playPause(),
+              animationDelay: `${getRandomInt(50000, 100000)}ms`
             }} className={`absolute w-fit h-fit`}>
               <Sparkle size={getRandomInt(1, 10)} />
             </div>
           ))
         }
       </div>
-    </div>
+    </div >
   )
 }
