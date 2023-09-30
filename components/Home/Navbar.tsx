@@ -28,7 +28,7 @@ export default function HomeNavbar() {
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-full">
         <div className="flex space-x-4">
           <Logo />
-          <nav className="h-full">
+          <nav className="h-full hidden sm:block ">
             <ul className="flex space-x-6 text-white/60 hover:text-white/80">
               {
                 navList.map((nav, i) => (

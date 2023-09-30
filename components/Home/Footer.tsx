@@ -52,8 +52,8 @@ export default function HomeFooter() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="flex border-t  mt-12 py-6 justify-evenly items-center text-sm text-400">
-      <div className="max-w-7xl w-full flex-row py-4 sm:flex justify-between">
+    <footer className="flex border-t py-6 justify-evenly items-center text-sm text-400">
+      <div className="max-w-7xl px-4 w-full flex-row py-4 sm:flex justify-between">
         <div className="flex flex-col justify-start ">
           <Logo />
           {/* <p>&#169; {year} Raunak Gurud</p> */}

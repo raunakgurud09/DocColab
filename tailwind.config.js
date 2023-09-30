@@ -54,6 +54,9 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      cursor: {
+        fancy: "url(/cursor.svg),pointer",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

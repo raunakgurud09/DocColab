@@ -8,7 +8,7 @@ export default function Hero() {
     <MaxContainer>
       <div className='flex flex-col w-full h-screen'>
         <HeroBackground />
-        <div className='flex flex-col my-28 w-full justify-center items-center'>
+        <div className='flex flex-col  w-full justify-center items-center'>
           <div className="w-[60%]">
             <h1 className='text-6xl my-10 text-center'>
               <span className='block'>
@@ -18,7 +18,7 @@ export default function Hero() {
                 Document your API
               </span>
             </h1>
-            <p className='text-lg selection:bg-accent mx-16 text-center'>Docolab is a open-source project which focuses on helping developers on API documentation with other team member and AI</p>
+            <p className='text-lg selection:bg-accent text-center'>Docolab is a open-source project which focuses on helping developers on API documentation with other team member and AI</p>
           </div>
         </div>
         <div className='flex flex-row space-x-6 justify-center items-center'>

@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <div className=''>
       <HomeNavbar />
-      <div>
+      <div className='overflow-hidden'>
         <Hero />
-        <Cta />
+        {/* <Cta /> */}
         <Features />
         <Testimonials />
-        <WorkingVideo />
         <OSS />
+        <WorkingVideo />
       </div>
       <HomeFooter />
     </div>
