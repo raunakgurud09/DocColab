@@ -1,5 +1,6 @@
 import Cta from '@/components/Home/Cta'
 import Features from '@/components/Home/Features'
+import HomeFooter from '@/components/Home/Footer'
 import Hero from '@/components/Home/Hero'
 import HomeNavbar from '@/components/Home/Navbar'
 import OSS from '@/components/Home/Oss'
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <div className=''>
       <HomeNavbar />
-      <div className='max-w-7xl mx-auto px-4 flex  flex-col justify-center items-center h-full'>
+      <div>
         <Hero />
         <Cta />
         <Features />
@@ -20,6 +21,7 @@ export default function Home() {
         <WorkingVideo />
         <OSS />
       </div>
+      <HomeFooter />
     </div>
   )
 }

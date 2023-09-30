@@ -15,22 +15,7 @@ export default function SettingsCard({ children }: {
       <div className="8/12">
         {children}
       </div>
-      <div className="w-full h-fit border grid grid-cols-4 p-4 gap-4">
-        <div className="fcc w-full h-20 rounded-md bg-background text-foreground">background</div>
-        <div className="fcc w-full h-20 rounded-md bg-foreground text-background">foreground</div>
-        <div className="fcc w-full h-20 rounded-md bg-primary text-primary-foreground">primary</div>
-        <div className="fcc w-full h-20 rounded-md bg-primary-foreground text-primary">primary-foreground</div>
-        <div className="fcc w-full h-20 rounded-md bg-secondary text-secondary-foreground">secondary</div>
-        <div className="fcc w-full h-20 rounded-md bg-secondary-foreground  text-secondary">secondary-foreground</div>
-        <div className="fcc w-full h-20 rounded-md bg-muted text-muted-foreground">muted</div>
-        <div className="fcc w-full h-20 rounded-md bg-muted-foreground text-muted">muted-foreground</div>
-        <div className="fcc w-full h-20 rounded-md bg-destructive text-destructive-foreground ">destructive</div>
-        <div className="fcc w-full h-20 rounded-md bg-destructive-foreground text-destructive ">destructive</div>
-        <div className="fcc w-full h-20 rounded-md bg-accent text-accent-foreground ">accent</div>
-        <div className="fcc w-full h-20 rounded-md bg-accent-foreground text-accent ">accent-foreground</div>
-      </div>
-
-
+      
     </div>
 
   )
