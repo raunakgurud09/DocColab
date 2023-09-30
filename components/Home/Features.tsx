@@ -1,7 +1,10 @@
 import React from 'react'
+import MaxContainer from '../Common/MaxContainer'
 
 export default function Features() {
   return (
-    <div>Features</div>
+    <MaxContainer>
+      <div>Features</div>
+    </MaxContainer>
   )
 }

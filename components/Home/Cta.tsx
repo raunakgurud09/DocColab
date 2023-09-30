@@ -1,7 +1,10 @@
 import React from 'react'
+import MaxContainer from '../Common/MaxContainer'
 
 export default function Cta() {
   return (
-    <div>Cta</div>
+    <MaxContainer>
+      cta
+    </MaxContainer>
   )
 }

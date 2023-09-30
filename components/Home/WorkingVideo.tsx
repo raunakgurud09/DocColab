@@ -1,7 +1,10 @@
 import React from 'react'
+import MaxContainer from '../Common/MaxContainer'
 
 export default function WorkingVideo() {
   return (
-    <div>WorkingVideo</div>
+    <MaxContainer>
+      <div>WorkingVideo</div>
+    </MaxContainer>
   )
 }
