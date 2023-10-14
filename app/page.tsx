@@ -11,9 +11,9 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className=''>
+    <div className='overflow-hidden'>
       <HomeNavbar />
-      <div className='overflow-hidden'>
+      <div className=''>
         <Hero />
         {/* <Cta /> */}
         <Features />

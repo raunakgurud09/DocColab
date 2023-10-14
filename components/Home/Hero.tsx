@@ -6,11 +6,11 @@ import MaxContainer from '../Common/MaxContainer'
 export default function Hero() {
   return (
     <MaxContainer>
-      <div className='flex flex-col w-full h-screen'>
+      <div className='flex flex-col w-full mt-28 mb-56'>
         <HeroBackground />
         <div className='flex flex-col  w-full justify-center items-center'>
           <div className="w-[60%]">
-            <h1 className='text-6xl my-10 text-center'>
+            <h1 className='text-3xl sm:text-6xl my-10 text-center'>
               <span className='block'>
                 Collaborate with others
               </span>
